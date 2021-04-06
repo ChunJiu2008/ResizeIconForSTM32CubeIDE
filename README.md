@@ -27,6 +27,8 @@ You can use the **`Revert`** button to restore those icons. (Size: 16*16)
 python BigIcon.py
 ```
 
+So you only need to download **`BigIcon.py`**, unless you plan to beautify its UI, then other files are needed.
+
 
 
 <img src="Image/image-20210406090624647.png" alt="image-20210406090624647" style="zoom: 80%;" />
