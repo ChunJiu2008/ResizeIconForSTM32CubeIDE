@@ -119,7 +119,7 @@ class MyFrame(wx.Frame):
             self.text_ctrl_1.Value = Dlg.GetPath()
             self.btADJ.Enable()
             self.btRevert.Enable()
-        self.tcInfo.write('\nOK!\n')
+        self.tcInfo.write('\n====\nOK!\n')
 
     def exit_program(self, event):  # wxGlade: MyFrame.<event_handler>
         self.Close()
@@ -181,7 +181,6 @@ def checkSize(pictype, newSize):
     isOK = True
     srcname = ''
     for imgfile in picfiles:
-        print("\n\r", imgfile, "\n\r")
         if os.path.exists(imgfile):
             srcname = os.path.basename(imgfile)
             if os.path.getsize(imgfile)>8:                
