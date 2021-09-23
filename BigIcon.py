@@ -183,8 +183,12 @@ def checkSize(pictype, newSize):
     for imgfile in picfiles:
         if os.path.exists(imgfile):
             srcname = os.path.basename(imgfile)
-            if os.path.getsize(imgfile)>8:                
-                img = Image.open(imgfile)
+            if os.path.getsize(imgfile)>8:   
+                # fix: PIL.UnidentifiedImageError: cannot identify image file
+                try:             
+                  img = Image.open(imgfile)
+                except:
+                    img = Image.new('RGBA', (16,16))
             else:
                 img = Image.new('RGBA', (16,16))
             if img.format != None:

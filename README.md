@@ -2,7 +2,7 @@
 
 ### Operating environment
 
-- Python 3.8.x
+- Python 3.8 +
   - pip
   - wxPython
   - pillow 
@@ -32,3 +32,14 @@ So you only need to download **`BigIcon.py`**, unless you plan to beautify its U
 
 
 <img src="Image/image-20210406090624647.png" alt="image-20210406090624647" style="zoom: 80%;" />
+
+
+
+### 2021.9.22
+
+**An unrecognized image appeared:**
+
+PIL.UnidentifiedImageError: cannot identify image file 'D:\\Tools\\MCU\\ti\\ccs1040\\ccs\\eclipse\\plugins\\org.eclipse.platform_4.14.0.v20191210-0610\\eclipse_lg.png'
+
+**Fix :** Use try...except !
+
